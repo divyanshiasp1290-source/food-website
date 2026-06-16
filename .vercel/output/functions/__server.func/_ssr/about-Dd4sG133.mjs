@@ -2,7 +2,7 @@ import { j as jsxRuntimeExports } from "../_libs/react.mjs";
 import { P as PageHero } from "./PageHero-BdJZt92n.mjs";
 import { R as Reveal } from "./Reveal-B_-tUvzj.mjs";
 import { f as factory } from "./about-factory-DifoDJ7W.mjs";
-import { E as Earth, U as Users, g as Factory, h as FlaskConical, d as Heart, i as ShieldCheck, j as Leaf, k as Award } from "../_libs/lucide-react.mjs";
+import { E as Earth, U as Users, h as Factory, i as FlaskConical, e as Heart, j as ShieldCheck, k as Leaf, l as Award } from "../_libs/lucide-react.mjs";
 import "../_libs/framer-motion.mjs";
 import "../_libs/motion-dom.mjs";
 import "../_libs/motion-utils.mjs";

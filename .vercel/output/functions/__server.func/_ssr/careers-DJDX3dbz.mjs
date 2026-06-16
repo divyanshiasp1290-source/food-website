@@ -1,7 +1,7 @@
 import { j as jsxRuntimeExports } from "../_libs/react.mjs";
 import { P as PageHero } from "./PageHero-BdJZt92n.mjs";
 import { R as Reveal } from "./Reveal-B_-tUvzj.mjs";
-import { d as Heart, E as Earth, e as Sparkles, f as Briefcase, A as ArrowRight } from "../_libs/lucide-react.mjs";
+import { e as Heart, E as Earth, f as Sparkles, g as Briefcase, A as ArrowRight } from "../_libs/lucide-react.mjs";
 import "../_libs/framer-motion.mjs";
 import "../_libs/motion-dom.mjs";
 import "../_libs/motion-utils.mjs";

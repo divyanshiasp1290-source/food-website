@@ -247,10 +247,24 @@ export function SiteHeader() {
           ))}
         </nav>
 
+        {/* Mobile header actions */}
+        <div className="flex items-center gap-3 lg:hidden">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-full p-2 text-primary transition hover:bg-muted/20 hover:text-foreground"
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Open navigation menu"
+            aria-expanded={open}
+          >
+            <Menu className="h-5 w-5" />
+          </button>
+        </div>
+
         <div className="hidden items-center gap-5 lg:flex">
           {!isProductsRoute &&
             (searchOpen ? (
               <div className="relative w-full max-w-[420px]">
+
                 <form
                   onSubmit={(event) => event.preventDefault()}
                   className="flex items-center gap-2 rounded-full border border-border bg-card px-3 py-2"
@@ -363,6 +377,8 @@ export function SiteHeader() {
                   {item.label}
                 </Link>
               ))}
+
+              {/* Mobile: show brand directory first */}
               <Link
                 to="/products"
                 onClick={() => setOpen(false)}
@@ -370,7 +386,23 @@ export function SiteHeader() {
               >
                 Our Brands
               </Link>
+
+              {/* Mobile: quick category links (hamburger menu content) */}
+              <div className="mt-3 grid grid-cols-2 gap-2">
+                {BRAND_GROUPS.map((brand) => (
+                  <Link
+                    key={brand.category}
+                    to="/products/category/$category"
+                    params={{ category: brand.category }}
+                    onClick={() => setOpen(false)}
+                    className="rounded-lg border border-border bg-card/60 px-3 py-2 text-sm font-bold text-foreground hover:bg-card"
+                  >
+                    {brand.title}
+                  </Link>
+                ))}
+              </div>
             </div>
+
           </motion.div>
         )}
       </AnimatePresence>
