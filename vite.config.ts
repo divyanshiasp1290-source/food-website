@@ -12,4 +12,9 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Force Nitro/server output for Vercel.
+  // Otherwise the build can skip serverless deployment plugin when Lovable context
+  // is not detected, leading to 404 on deep links.
+  nitro: true,
 });
+
