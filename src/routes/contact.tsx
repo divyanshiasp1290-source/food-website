@@ -3,7 +3,6 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import {
   Mail,
-  Phone,
   MapPin,
   ArrowRight,
   Newspaper,
@@ -205,15 +204,6 @@ function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 rounded-2xl bg-card border border-border p-6">
-                <span className="grid h-11 w-11 place-items-center bg-cocoa text-cream">
-                  <Phone size={16} />
-                </span>
-                <div>
-                  <div className="font-display text-lg">Phone</div>
-                  <div className="text-muted-foreground">+48 22 595 50 00</div>
-                </div>
-              </div>
               <div className="rounded-2xl overflow-hidden border border-border h-64 bg-secondary">
                 <iframe
                   title="Kożuszki-Parcel office map"
